@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "✅ Commit successful! 🎉"
+# Optional: auto-push after commit
+# git push origin main
