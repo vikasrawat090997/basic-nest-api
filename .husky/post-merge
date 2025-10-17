@@ -3,8 +3,8 @@
 
 branch=$(git rev-parse --abbrev-ref HEAD)
 if [ "$branch" = "main" ]; then
-  echo "🔄 Commit on main detected. Running deploy..."
+  echo "🔄 Detected merge into main. Running deploy..."
   ./deploy.sh
 else
-  echo "ℹ️ Commit on $branch detected. No deployment triggered."
+  echo "ℹ️ Merge into $branch detected. No deployment triggered."
 fi
